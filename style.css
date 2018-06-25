@@ -1,0 +1,237 @@
+/*Général*/
+	@font-face {
+			font-family: "Alcubierre";
+			src: url('Alcubierre.otf');
+	}
+
+	body {
+			font-family: 'Alcubierre', sans-serif;
+			font-size: 1.5em;
+
+	}
+
+	.bord {
+		border: 3px black solid;
+	}
+
+	h2, .crea p {
+		text-align: center;
+		padding: 7vh 7vh;
+	}
+	/********************************************************************************************************/
+
+/*Header*/
+	@media (max-width: 576px){
+		body {
+			font-size: 5vw;
+		}
+		.navbar-brand {
+			width: 75px;
+		}
+		.logo {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	@media (min-width: 576px){
+		.navbar-brand {
+			width: 75px;
+			margin-left: 20px;
+		}
+		.logo {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.header {
+		display: flex;
+		height: 90vh;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) , rgba(0, 0, 0, 0.45) ),url('img/1.jpg');
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-size: cover;
+	}
+
+	body .header .navbar-collapse .navbar-nav a, .fa-bars{
+		color: white;
+		border: none;
+	}
+
+	.titre {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		color: white;
+	}
+
+	.scroll {
+		position: absolute;
+		bottom: 12%;
+		height: 12%;
+	}
+
+	.gif-scroll {
+		height: 100%;
+	}
+	/********************************************************************************************************/
+
+/*Portfolio*/
+	.porfolio, .selection {
+		text-align: center;
+	}
+
+	.Active {
+		text-decoration: underline;
+	}
+
+	.selection ul li{
+		display: inline-block;
+		margin-right: 5vh;
+		cursor: pointer;
+	}
+
+	.crea {
+		color: white;
+		background-size: 97%;
+		background-repeat: no-repeat;
+		height: 50vh;
+		margin-top: 1%;
+	}
+
+	.description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1vh;
+		height: 100%;
+	}
+
+	.fond {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(27, 163, 156, 0.65);
+		height: 100%;
+		width: 97%;
+	}
+
+	.cache {
+		filter: grayscale(0.8);
+	}
+
+	.fondapercu {
+		position: fixed;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		z-index: 9999;
+		background-color: rgba(27, 163, 156, 0.65);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.visu {
+		z-index: 10000;
+		max-height: 70vh;
+		max-width: 100vw;
+		text-align: center;
+		cursor: pointer;
+	}
+	/********************************************************************************************************/
+
+/*Compétences*/
+	.path {
+		stroke-dasharray: 1300;
+		stroke-dashoffset: 1300;
+	}
+	/********************************************************************************************************/
+
+/*Footer*/
+	footer {
+		background-color: rgb(31,38,79);
+		color: white;
+	}
+
+	@media (max-width: 992px){
+		#contact{
+			padding: 0px 40px 40px 40px;
+			text-align: center;
+		}
+		.col-lg-6 #contact {
+			border-bottom: 2px solid white;
+		}
+	}
+
+	@media (min-width: 992px){
+		#contact{
+			padding-right: 40px;
+			text-align: right;
+			
+		}
+		.gauchefooter{
+			border-right: 2px solid white;
+		}
+	}
+
+	footer label {
+		padding-top: 10px;
+
+	}
+
+	.submit {
+		margin-top: 20px;
+	}
+
+	@media (min-width: 992px){
+		.infos {
+			padding-left: 40px;
+		}
+	}
+	@media (max-width: 992px){
+		.infos {
+			padding: 40px 40px 0px 40px;
+		}
+	}
+	.infos {
+		display: flex;
+		align-items: center;
+	}
+
+	td{
+		padding: 10px;
+	}
+
+	footer a{
+		color: white;
+		text-decoration: underline;
+	}
+
+	.reseaux {
+		margin-top: 15px;
+		padding: 15px;
+	}
+
+	.copy {
+		text-align: center;
+		font-size: 0.8em;
+		padding-top: 2vh;
+		padding-bottom: 0px;
+		margin: 0;
+	}
+
+	@media (max-width: 992px){
+		.infos {
+			text-align: center;
+			justify-content: center;
+		}
+	}
+	/********************************************************************************************************/
